@@ -46,11 +46,33 @@
             color: #4a90e2;
         }
 
+        /* Logo Styling */
         .logo {
-            vertical-align: middle;
-            margin-right: 5px;
             width: 25px;
             height: 25px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 5px;
+            border: 2px solid #4a90e2;
+        }
+
+        /* University Link Styling */
+        .university-bubble {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-left: 5px;
+            border-radius: 15px;
+            background-color: #e3e6f0;
+            color: #333;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .university-bubble:hover {
+            background-color: #4a90e2;
+            color: #fff;
         }
 
         /* Link Styling */
@@ -99,8 +121,8 @@
         <h1>Hey, I'm Daniel 👋</h1>
         <p>
             I'm a General Biology student at the 
-            <a href="https://ucsd.edu" target="_blank">
-                <img src="/ucsd shield.png" alt="UCSD Logo" class="logo">
+            <a href="https://ucsd.edu" target="_blank" class="university-bubble">
+                <img src="/ucsd_shield.png" alt="UCSD Logo" class="logo">
                 University of California, San Diego
             </a>. 
         </p>
