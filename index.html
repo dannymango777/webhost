@@ -6,6 +6,7 @@
     <title>Daniel Mangasarian</title>
     <meta name="description" content="General Biology student at the University of California, San Diego.">
     <style>
+        /* General Styling */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,45 +14,89 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
+
+        /* Header and Navigation */
         header {
+            width: 100%;
             margin-bottom: 20px;
         }
+
         nav a {
-            margin-right: 15px;
+            margin-right: 20px;
             text-decoration: none;
             color: #666;
+            font-weight: bold;
+            transition: color 0.3s;
         }
+
+        nav a:hover {
+            color: #4a90e2;
+        }
+
+        /* Title and Logo */
         h1 {
-            font-size: 24px;
+            font-size: 28px;
+            margin: 0;
+            color: #4a90e2;
         }
+
         .logo {
             vertical-align: middle;
             margin-right: 5px;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
         }
+
+        /* Link Styling */
         .links {
-            margin-top: 20px;
+            margin-top: 30px;
         }
+
         .links a {
             display: inline-block;
-            margin-right: 15px;
+            margin: 10px 15px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: #e3e6f0;
+            color: #333;
+            font-weight: bold;
             text-decoration: none;
-            color: #666;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #4a90e2;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a, .links a {
+                margin-right: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="/">home</a>
-            <a href="/DannyResumeFuture.pdf" target="_blank">resume</a>
+            <a href="/">Home</a>
+            <a href="/DannyResumeFuture.pdf" target="_blank">Resume</a>
         </nav>
     </header>
  
     <main>
-        <h1>hey, I'm Daniel 👋</h1>
+        <h1>Hey, I'm Daniel 👋</h1>
         <p>
             I'm a General Biology student at the 
             <a href="https://ucsd.edu" target="_blank">
@@ -61,10 +106,10 @@
         </p>
  
         <div class="links">
-            <a href="https://www.linkedin.com/in/danielmangasarian/" target="_blank">linkedin</a>
-            <a href="/DannyResumeFuture.pdf" target="_blank">resume</a>
-            <a href="https://github.com/dannymango777" target="_blank">github</a>
-            <a href="mailto:danielmangasarian@gmail.com">email</a>
+            <a href="https://www.linkedin.com/in/danielmangasarian/" target="_blank">LinkedIn</a>
+            <a href="/DannyResumeFuture.pdf" target="_blank">Resume</a>
+            <a href="https://github.com/dannymango777" target="_blank">GitHub</a>
+            <a href="mailto:danielmangasarian@gmail.com">Email</a>
         </div>
     </main>
 </body>
